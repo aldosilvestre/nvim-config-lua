@@ -7,6 +7,7 @@ return require 'packer'.startup(function()
 
     use 'nvim-neo-tree/neo-tree.nvim'
     use 'MunifTanjim/nui.nvim' --> Dependency from neo tree
+    use 's1n7ax/nvim-window-picker' --> Window picker
 
     use("nvim-lua/plenary.nvim")
 

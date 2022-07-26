@@ -7,7 +7,7 @@ map('n', '<leader>q', ':q<CR>', opts)
 map('n', '<leader>w', ':w<CR>', opts)
 
 map('n', '<leader>nt', ':NeoTreeFocusToggle<CR>', opts)
-map('n', '<leader>ntf', ':NeoTreeFloatToggle<CR>', opts)
+map('n', '<leader>nf', ':NeoTreeFloatToggle<CR>', opts)
 
 -- Telescope
 map("n", '<leader>ff',':Telescope find_files<CR>', opts)
