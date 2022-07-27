@@ -40,4 +40,5 @@ luac.out
 *.hex
 
 plugin/packer_compiler.lua
-
+nvim/plugin
+/plugin/
