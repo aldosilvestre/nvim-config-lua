@@ -312,8 +312,8 @@ local config = {
                 ["<C-x>"] = "clear_filter",
                 ["<bs>"] = "navigate_up",
                 ["."] = "set_root",
-                ["[g"] = "prev_git_modified",
-                ["]g"] = "next_git_modified",
+                ["gp"] = "prev_git_modified",
+                ["gn"] = "next_git_modified",
             }
         },
         async_directory_scan = "auto", -- "auto"   means refreshes are async, but it's synchronous when called from the Neotree commands.

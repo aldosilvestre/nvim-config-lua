@@ -36,7 +36,7 @@ local capabilities = vim.lsp.protocol.make_client_capabilities()
 capabilities = cmp_nvim_lsp.update_capabilities(capabilities)
 
 
-local servers = { 'tsserver', 'dockerls', 'emmet_ls', 'html', 'jsonls', 'sumneko_lua', 'eslint' }
+local servers = { 'tsserver', 'dockerls', 'emmet_ls', 'html', 'jsonls', 'sumneko_lua', 'cssmodules_ls' }
 
 for _, lsp in ipairs(servers) do
     lspconfig[lsp].setup {
