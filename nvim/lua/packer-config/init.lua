@@ -1,3 +1,4 @@
+---@diagnostic disable 
 return require 'packer'.startup(function()
     use 'wbthomason/packer.nvim'
 
@@ -22,7 +23,7 @@ return require 'packer'.startup(function()
 
     --> themes
     use("EdenEast/nightfox.nvim") --> nightfox colorsceme for neovim 
-	use("sainnhe/gruvbox-material")
+    use("sainnhe/gruvbox-material")
 
     use("windwp/nvim-autopairs")
 
@@ -57,4 +58,13 @@ return require 'packer'.startup(function()
     use 'tpope/vim-fugitive'
     use 'lewis6991/gitsigns.nvim'
 
+    -- Multiple cursors
+    use'terryma/vim-multiple-cursors'
+
+    -- Color picker css
+    use ({"ziontee113/color-picker.nvim",
+      config = function()
+        require("color-picker")
+      end,
+    })
 end)
