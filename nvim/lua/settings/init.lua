@@ -33,5 +33,9 @@ set.hidden = true
 set.mouse = "a"
 set.clipboard = "unnamedplus"
 
+
+-- disable swap
+-- set.noswapfile = true
+
 vim.notify = require("notify")
 
