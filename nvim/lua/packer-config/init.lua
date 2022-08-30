@@ -1,4 +1,4 @@
----@diagnostic disable 
+---@diagnostic disable
 return require 'packer'.startup(function()
   use 'wbthomason/packer.nvim'
 
@@ -57,18 +57,19 @@ return require 'packer'.startup(function()
   --> Git
   use 'lewis6991/gitsigns.nvim'
   use 'rhysd/git-messenger.vim'
-  use 'whiteinge/diffconflicts';
+  use 'whiteinge/diffconflicts'
+  use 'f-person/git-blame.nvim'
 
   --> tabnine
-  use {'tzachar/cmp-tabnine', run='./install.sh', requires = 'hrsh7th/nvim-cmp'}
+  use { 'tzachar/cmp-tabnine', run = './install.sh', requires = 'hrsh7th/nvim-cmp' }
 
-    --> Multiple cursors
-    use'terryma/vim-multiple-cursors'
+  --> Multiple cursors
+  use 'terryma/vim-multiple-cursors'
 
-    --> Color picker css
-    use ({"ziontee113/color-picker.nvim",
-      config = function()
-        require("color-picker")
-      end,
-    })
+  --> Color picker css
+  use({ "ziontee113/color-picker.nvim",
+    config = function()
+      require("color-picker")
+    end,
+  })
 end)
