@@ -6,7 +6,10 @@ nightfox.setup({
         terminal_colors = true,
         styles = {
             comments = 'italic',
-            functions = 'italic',
+            functions = 'italic,bold',
+            conditionals = 'bold',
+            variables = 'bold',
+            constants = 'italic,bold'
         },
     }
 })

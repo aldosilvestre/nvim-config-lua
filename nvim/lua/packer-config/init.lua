@@ -55,8 +55,9 @@ return require 'packer'.startup(function()
   use 'hrsh7th/nvim-compe'
 
   --> Git
-  use 'tpope/vim-fugitive'
   use 'lewis6991/gitsigns.nvim'
+  use 'rhysd/git-messenger.vim'
+  use 'whiteinge/diffconflicts';
 
   --> tabnine
   use {'tzachar/cmp-tabnine', run='./install.sh', requires = 'hrsh7th/nvim-cmp'}
